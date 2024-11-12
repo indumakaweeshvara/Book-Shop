@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="OrderApane" prefHeight="700.0" prefWidth="1017.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.stock1stsemesterfinalproject.controller.OrdersFormController">
+   <children>
+      <Label fx:id="orderIdLbl" layoutX="58.0" layoutY="47.0" prefHeight="42.0" prefWidth="113.0" text="Order ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" layoutX="58.0" layoutY="105.0" prefHeight="42.0" prefWidth="203.0" text="Description">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderQty" layoutX="59.0" layoutY="173.0" prefHeight="32.0" prefWidth="127.0" text="Order Qty">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="OLbl" layoutX="210.0" layoutY="52.0" prefHeight="38.0" prefWidth="128.0" />
+      <TextField fx:id="txtOrderDesc" layoutX="202.0" layoutY="115.0" prefHeight="25.0" prefWidth="299.0" />
+      <TextField fx:id="txtOrderQty" layoutX="204.0" layoutY="175.0" prefHeight="25.0" prefWidth="152.0" />
+      <Button fx:id="orderbtnU" layoutX="50.0" layoutY="269.0" mnemonicParsing="false" onAction="#OrderupdateOnAction" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #d497fb;" text="Update">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="orderbtnR" layoutX="788.0" layoutY="266.0" mnemonicParsing="false" onAction="#OrderResetOnAction" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: skyblue;" text="Reset">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="orderbtnS" layoutX="533.0" layoutY="268.0" mnemonicParsing="false" onAction="#OrderSaveOnAction" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #51f06b;" text="Save">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="orderbtnD" layoutX="287.0" layoutY="270.0" mnemonicParsing="false" onAction="#OrderdeleteOnAction" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #f05551;" text="Delete">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="OrderTbl" layoutX="53.0" layoutY="346.0" onMouseClicked="#OrderTblOnMouseClicked" prefHeight="297.0" prefWidth="891.0">
+        <columns>
+          <TableColumn fx:id="orderIDcol" prefWidth="168.33334350585938" text="Order ID" />
+            <TableColumn fx:id="colDesc" prefWidth="319.1999816894531" text="Description" />
+            <TableColumn fx:id="colOrderQty" prefWidth="231.99993896484375" text="Order Qty" />
+            <TableColumn fx:id="colCustIdOrder" prefWidth="170.39995117187505" text="Customer Id" />
+        </columns>
+      </TableView>
+      <Label fx:id="CustIdlblOrder" layoutX="570.0" layoutY="54.0" prefHeight="26.0" prefWidth="114.0" text="Customer Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="custIdComboOrder" layoutX="685.0" layoutY="55.0" onAction="#custIdComboOrderOnAction" prefHeight="26.0" prefWidth="127.0" />
+   </children>
+</AnchorPane>
