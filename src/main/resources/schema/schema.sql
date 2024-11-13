@@ -92,7 +92,7 @@ CREATE TABLE item(
 );
 
 
-CREATE TABLE order_detail(
+CREATE TABLE order_item_detail(
                              Order_Id VARCHAR(6),
                              Item_Id VARCHAR(6),
                              Date date,
@@ -110,9 +110,10 @@ CREATE TABLE stock_item_detail(
 
 
 
-CREATE TABLE supplier_order_detail(
+CREATE TABLE supplier_stock_detail(
+                                      Date date,
                                       Stock_Id VARCHAR(6),
                                       Sup_Id VARCHAR(6),
                                       CONSTRAINT FOREIGN KEY (Stock_Id) REFERENCES stock(Stock_Id) on Delete Cascade on Update Cascade,
-                                      CONSTRAINT FOREIGN KEY (Sup_Id) REFERENCES item(Item_Id) on Delete Cascade on Update Cascade
+                                      CONSTRAINT FOREIGN KEY (Sup_Id) REFERENCES supplier(Sup_Id) on Delete Cascade on Update Cascade
 );

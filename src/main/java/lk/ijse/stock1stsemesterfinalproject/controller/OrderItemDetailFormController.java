@@ -5,11 +5,13 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
-public class OrderDetailFormController {
+public class OrderItemDetailFormController {
 
     @FXML
     private AnchorPane ApaneLOD;
@@ -30,13 +32,31 @@ public class OrderDetailFormController {
     private Button btnUOD;
 
     @FXML
-    private ComboBox<?> comboODID;
+    private TableColumn<?, ?> colODamount;
+
+    @FXML
+    private TableColumn<?, ?> colODdate;
+
+    @FXML
+    private TableColumn<?, ?> colODid;
+
+    @FXML
+    private TableColumn<?, ?> colODitemId;
 
     @FXML
     private ComboBox<?> comboODItemID;
 
     @FXML
     private Label lblAmount;
+
+    @FXML
+    private Label lblDateOD;
+
+    @FXML
+    private Label lblODate;
+
+    @FXML
+    private Label lblOID;
 
     @FXML
     private Label lblblidOD;
@@ -63,7 +83,17 @@ public class OrderDetailFormController {
     }
 
     @FXML
+    void ODtblOnMouseClicked(MouseEvent event) {
+
+    }
+
+    @FXML
     void ODupdateOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void comboODItemIDOnAction(ActionEvent event) {
 
     }
 

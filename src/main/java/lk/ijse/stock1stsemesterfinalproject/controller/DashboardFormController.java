@@ -59,7 +59,7 @@ public class DashboardFormController implements Initializable {
     private JFXButton stockitembtn;
 
     @FXML
-    private JFXButton suporderbtn;
+    private JFXButton supstockbtn;
 
     @FXML
     private JFXButton supplierbtn;
@@ -112,7 +112,7 @@ public class DashboardFormController implements Initializable {
 
     @FXML
     void orderdetailbtnOnAction(ActionEvent event) {
-        navigateTo("/view/orderDetailForm.fxml");
+        navigateTo("/view/orderItemDetailForm.fxml");
 
     }
 
@@ -147,8 +147,8 @@ public class DashboardFormController implements Initializable {
     }
 
     @FXML
-    void suporderbtnOnAction(ActionEvent event) {
-        navigateTo("/view/supplierOrderDetailForm.fxml");
+    void supstockbtnOnAction(ActionEvent event) {
+        navigateTo("/view/supplierStockDetailForm.fxml");
 
     }
 

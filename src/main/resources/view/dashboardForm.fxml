@@ -74,7 +74,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="orderdetailbtn" layoutX="10.0" layoutY="165.0" onAction="#orderdetailbtnOnAction" prefHeight="36.0" prefWidth="250.0" text="Order Details" textFill="#640a72">
+                  <JFXButton fx:id="orderdetailbtn" layoutX="10.0" layoutY="165.0" onAction="#orderdetailbtnOnAction" prefHeight="36.0" prefWidth="250.0" text="Order Item Details" textFill="#640a72">
                      <VBox.margin>
                         <Insets top="15.0" />
                      </VBox.margin>
@@ -106,7 +106,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="suporderbtn" layoutX="10.0" layoutY="309.0" onAction="#suporderbtnOnAction" prefHeight="36.0" prefWidth="250.0" text="Supplier Order Details" textFill="#640a72">
+                  <JFXButton fx:id="supstockbtn" layoutX="10.0" layoutY="309.0" onAction="#supstockbtnOnAction" prefHeight="36.0" prefWidth="250.0" text="Supplier Stock Details" textFill="#640a72">
                      <VBox.margin>
                         <Insets top="15.0" />
                      </VBox.margin>

@@ -6,12 +6,16 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 public class StockItemDetailFormController {
 
     @FXML
     private AnchorPane ApaneStockItemDetail;
+
+    @FXML
+    private Label ItemIdlblSID;
 
     @FXML
     private Button btnDStockItemDetail;
@@ -26,10 +30,19 @@ public class StockItemDetailFormController {
     private Button btnUStockItemDetail;
 
     @FXML
+    private TableColumn<?, ?> colidStItemDetail;
+
+    @FXML
     private TableColumn<?, ?> colidStockItemDetail;
 
     @FXML
-    private Label lbl;
+    private Label lblIid;
+
+    @FXML
+    private Label lblSID;
+
+    @FXML
+    private Label stockIdlblSID;
 
     @FXML
     private TableView<?> tblStockItemDetail;
@@ -46,6 +59,11 @@ public class StockItemDetailFormController {
 
     @FXML
     void deleteOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void tblStockItemDOnMouseClicked(MouseEvent event) {
 
     }
 

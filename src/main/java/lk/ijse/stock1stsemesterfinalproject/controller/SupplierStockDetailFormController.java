@@ -7,9 +7,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
-public class SupplierOrderDetailFormController {
+public class SupplierStockDetailFormController {
 
     @FXML
     private AnchorPane Apane;
@@ -30,10 +31,10 @@ public class SupplierOrderDetailFormController {
     private TableColumn<?, ?> colCid;
 
     @FXML
-    private TableColumn<?, ?> colName;
+    private TableColumn<?, ?> colCid1;
 
     @FXML
-    private TableColumn<?, ?> colUid;
+    private TableColumn<?, ?> colCid11;
 
     @FXML
     private Label labelcontact;
@@ -42,7 +43,19 @@ public class SupplierOrderDetailFormController {
     private Label lbl;
 
     @FXML
-    private TableView<?> tbl;
+    private Label lblSidSSD;
+
+    @FXML
+    private Label lblSupIDSSD;
+
+    @FXML
+    private TableView<?> tblSSD;
+
+    @FXML
+    private Label txtStockId;
+
+    @FXML
+    private Label txtSupId;
 
     @FXML
     private TextField txtcontact;
@@ -59,6 +72,11 @@ public class SupplierOrderDetailFormController {
 
     @FXML
     void deleteOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void tblSSDOnMouseClicked(MouseEvent event) {
 
     }
 
