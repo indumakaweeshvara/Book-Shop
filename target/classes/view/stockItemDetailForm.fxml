@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ApaneStockItemDetail" prefHeight="700.0" prefWidth="1017.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Bookshop.controller.StockItemDetailFormController">
+   <children>
+      <Label fx:id="lblSID" layoutX="176.0" layoutY="78.0" prefHeight="38.0" prefWidth="128.0" />
+      <Button fx:id="btnUStockItemDetail" layoutX="56.0" layoutY="312.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #d497fb;" text="Update">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRStockItemDetail" layoutX="781.0" layoutY="312.0" mnemonicParsing="false" onAction="#ResetOnAction" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: skyblue;" text="Reset">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSStockItemDetail" layoutX="544.0" layoutY="312.0" mnemonicParsing="false" onAction="#SaveOnAction" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #51f06b;" text="Save">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDStockItemDetail" layoutX="296.0" layoutY="311.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #f05551;" text="Delete">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblStockItemDetail" layoutX="53.0" layoutY="383.0" onMouseClicked="#tblStockItemDOnMouseClicked" prefHeight="260.0" prefWidth="891.0">
+        <columns>
+          <TableColumn fx:id="colidStockItemDetail" minWidth="0.0" prefWidth="461.6666564941406" text="Stock ID" />
+          <TableColumn fx:id="colidStItemDetail" prefWidth="428.3333435058594" text="Item ID" />
+        </columns>
+      </TableView>
+      <Label fx:id="stockIdlblSID" layoutX="55.0" layoutY="78.0" prefHeight="38.0" prefWidth="162.0" text="Stock ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ItemIdlblSID" layoutX="55.0" layoutY="154.0" prefHeight="38.0" prefWidth="162.0" text="Item ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblIid" layoutX="176.0" layoutY="147.0" prefHeight="38.0" prefWidth="128.0" />
+   </children>
+</AnchorPane>
