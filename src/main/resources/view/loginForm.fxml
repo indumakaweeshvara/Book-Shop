@@ -10,12 +10,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootPane" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #9CCED9;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.stock1stsemesterfinalproject.controller.LoginFormController">
+<AnchorPane fx:id="rootPane" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #9CCED9;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Bookshop.controller.LoginFormController">
    <children>
       <ImageView fitHeight="768.0" fitWidth="1366.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/img/loginPage.png" />
-         </image>
+
       </ImageView>
       <AnchorPane fx:id="bodyPane" layoutX="47.0" layoutY="33.0" prefHeight="700.0" prefWidth="1270.0">
          <children>
@@ -24,19 +22,14 @@
                   <Font name="System Bold" size="47.0" />
                </font>
             </Label>
-            <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="56.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../assets/img/FontLogo.png" />
-               </image>
-            </ImageView>
             <Label fx:id="lblLogin2" layoutX="76.0" layoutY="199.0" opacity="0.9" stylesheets="@../style/Styles.css" text="Log in to continue.">
                <font>
                   <Font name="System Bold" size="47.0" />
                </font>
             </Label>
-            <ImageView fitHeight="462.0" fitWidth="462.0" layoutX="712.0" layoutY="129.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="631.0" fitWidth="589.0" layoutX="608.0" layoutY="74.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assets/img/girl.png" />
+                  <Image url="@../assets/img/bookshop.png" />
                </image>
             </ImageView>
             <Label layoutX="79.0" layoutY="284.0" opacity="0.8" style="-fx-text-fill: #2B2B2B;" text="Don’t have an account?">
@@ -44,7 +37,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="lblCreateNewAccount" layoutX="299.0" layoutY="284.0" onMouseClicked="#lblCreateNewAccountOnAction" opacity="0.6" style="-fx-text-fill: #2B2B2B;" text="Create a new Account">
+            <Label fx:id="lblCreateNewAccount" layoutX="327.0" layoutY="284.0" onMouseClicked="#lblCreateNewAccountOnAction" opacity="0.6" style="-fx-text-fill: #2B2B2B;" text="Create a new Account">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -75,7 +68,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Label>
-            <JFXButton fx:id="btnLogin" layoutX="80.0" layoutY="588.0" onAction="#btnLoginOnAction" prefHeight="46.0" prefWidth="389.0" stylesheets="@../style/Styles.css" text="Login">
+            <JFXButton fx:id="btnLogin" layoutX="80.0" layoutY="588.0" onAction="#btnLoginOnAction" prefHeight="46.0" prefWidth="389.0" ripplerFill="#3c1919" stylesheets="@../style/Styles.css" text="Login">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

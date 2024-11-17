@@ -1,5 +1,5 @@
 #btnLogin, #btnVerify, #btnReset, #btnSubmit, #btnRegister, #btnNext  {
-    -fx-background-color: #8CB7C0;
+    -fx-background-color: #dfb414;
     -fx-background-radius: 15px;
     -fx-text-fill: white;
     -fx-font-size: 15px;
@@ -26,7 +26,7 @@
 
 #txtOtp1, #txtOtp2, #txtOtp3, #txtOtp4 {
     -fx-background-color: #FFFFFF;
-    -fx-border-color: #6C63FF;
+    -fx-border-color: #ffe976;
     -fx-border-radius: 10px;
     -fx-font-size: 24px;
     -fx-padding: 10px;

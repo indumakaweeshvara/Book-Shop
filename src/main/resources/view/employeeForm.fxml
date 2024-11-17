@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="ApaneEmp" prefHeight="700.0" prefWidth="1017.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.stock1stsemesterfinalproject.controller.EmployeeFormController">
+<AnchorPane fx:id="ApaneEmp" prefHeight="700.0" prefWidth="1017.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Bookshop.controller.EmployeeFormController">
    <children>
       <Label fx:id="empidlbl" layoutX="58.0" layoutY="47.0" prefHeight="42.0" prefWidth="113.0" text="Employee ID">
          <font>

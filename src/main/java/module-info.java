@@ -1,4 +1,4 @@
-module lk.ijse.stock1stsemesterfinalproject {
+module lk.ijse.Bookshop {
     requires javafx.controls;
 
     requires javafx.fxml;
@@ -7,8 +7,11 @@ module lk.ijse.stock1stsemesterfinalproject {
     requires com.jfoenix;
     requires static lombok;
     requires java.sql;
+    requires net.sf.jasperreports.core;
+    requires java.desktop;
 
-    opens lk.ijse.stock1stsemesterfinalproject.dto.tm to javafx.base;
-    opens lk.ijse.stock1stsemesterfinalproject.controller to javafx.fxml;
-    exports lk.ijse.stock1stsemesterfinalproject;
+    opens lk.ijse.Bookshop.dto.tm to javafx.base;
+    opens lk.ijse.Bookshop.controller to javafx.fxml;
+    exports lk.ijse.Bookshop;
+    opens view to javafx.fxml;
 }

@@ -15,6 +15,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>7.0.1</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-fxml -->
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -86,7 +91,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                lk.ijse.stock1stsemesterfinalproject/lk.ijse.stock1stsemesterfinalproject.HelloApplication
+                                lk.ijse.stock1stsemesterfinalproject/lk.ijse.Bookshop.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
